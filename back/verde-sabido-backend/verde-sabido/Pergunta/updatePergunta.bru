@@ -1,0 +1,18 @@
+meta {
+  name: updatePergunta
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:8080/api/perguntas/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "descricao": "Qual é sua idade?",
+    "unidade": "1"
+  }
+}

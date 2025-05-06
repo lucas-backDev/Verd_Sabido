@@ -1,0 +1,18 @@
+meta {
+  name: PostPergunta
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8080/api/pergunta
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "descricao": "O meio ambiente é composto por:",
+    "unidade": "1"
+  }
+}
